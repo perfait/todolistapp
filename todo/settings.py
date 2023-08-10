@@ -80,18 +80,16 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todolist',
-        'USER': 'akaka',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'laelma_todolist',
+        'USER': 'laelma_project',
         'PASSWORD': 'puffnane1738',
-        'HOST': 'todolist.cdfeex6yzc6h.eu-north-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'HOST': '192.185.19.160',  # or the hostname where your MySQL server is running
+        'PORT': '3306',      # or the port on which your MySQL server is listening
     }
 }
 
 
-# Password validation
-# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
