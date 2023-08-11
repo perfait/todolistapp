@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6j-5ye5i9v^0m-hhno608_x25x4f@ziozf)g3y3$!$cyu@!qij
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['akaka-todo-list-app-c1aaeef0608e.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['167.99.82.115']
 
 
 # Application definition
