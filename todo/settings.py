@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-6j-5ye5i9v^0m-hhno608_x25x4f@ziozf)g3y3$!$cyu@!qij
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+ALLOWED_HOSTS = ['akaka-todo-list-app-c1aaeef0608e.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -80,16 +80,18 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'laelma_todolist',
-        'USER': 'laelma_project',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'todolist',
+        'USER': 'postgres',
         'PASSWORD': 'puffnane1738',
-        'HOST': '192.185.19.160',  # or the hostname where your MySQL server is running
-        'PORT': '3306',      # or the port on which your MySQL server is listening
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
 
+# Password validation
+# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
